@@ -4,6 +4,44 @@
 
 <head>
     <title>Rendezvous Menu</title>
+
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        body {
+            background-color: rgb(253, 223, 190);
+        }
+        caption {
+            font-weight: bold;
+            font-size: 3em;
+            margin-bottom: 8px;
+        }
+        table, th, td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+            
+        }
+        table {
+            width: 90%;
+            margin: auto;
+        }
+        tr {
+            height: 30px;
+        }
+        th {
+            background-color: #730202;
+            color: #ebebeb;
+            font-size: 2em;
+            text-align: left;
+        }
+        td {
+            font-size: 1.5em;
+        }
+        tr:nth-child(odd) {
+            background-color: #f8b283;
+        }
+    </style>
 </head>
 
 
@@ -67,6 +105,33 @@
             </table>
         </article>
 
+        <article id="menu">
+
+            <table>
+                <caption>Beverages</caption>
+                <tr>
+                    <th>Root Beer</th>
+                    <td>$3.00</td>
+                </tr>
+
+                <tr>
+                    <th>Bottled Water</th>
+                    <td>$1.25</td>
+                </tr>
+
+                <tr>
+                    <th>Lemonade</th>
+                    <td>$1.00</td>
+                </tr>
+
+                <tr>
+                    <th>Iced Tea</th>
+                    <td>$1.25</td>
+                </tr>
+
+            </table>
+
+        </article>
 
         <footer>
             <hr />

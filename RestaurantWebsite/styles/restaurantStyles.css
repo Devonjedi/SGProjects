@@ -1,0 +1,44 @@
+header, footer {
+    background-color: #b34e0b;
+    color: #fef9ff;
+    height: 100px;
+    text-align: center;
+    
+    padding: 30px 10px 20px 10px;
+}
+footer {
+    margin-top: 30em;
+}
+.clear-float {
+    clear:both;
+}
+title {
+    font-family:sans-serif; 
+    font-variant: small-caps;
+}
+h1 {
+    font-family:sans-serif; 
+    font-variant: small-caps;
+}
+nav a {
+    background-color: #ffe2cd;
+    color:#d87a00;
+    font-size: 1.25em;
+    font-weight: 500;
+    padding: 8px;
+    border: thin solid #b34e0b;
+    
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+nav a:visited{
+    color: #fc8621;
+}
+nav a:hover{
+    color:rgb(228, 196, 108);
+    text-decoration: none;
+}
+nav a:active{
+    text-decoration: none;
+}

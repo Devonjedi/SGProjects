@@ -4,6 +4,26 @@
 
 <head>
     <title>Rendezvous</title>
+
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+
+        title {
+            font-family:monospace;
+        }
+        form label {
+            font-weight:bolder;
+            font-size: 1.25em;
+        }
+        label {
+            font-weight: bold;
+            font-size: 1.25em;
+        }
+        fieldset {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 
@@ -25,10 +45,17 @@
      
         <article id="contact">
           <form action="contact.html" method="POST">
-            Name: <input type="text" name="myTextInput" required/> <br />
-            Email: <input type="text" name="myTextInput" /> <br />
-            Phone: <input type="text" name="myTextInput"/> <br />
-            Reason for Inquiry: <select name="inquiry">
+            <label for="fullName">Name:</label>
+            <input type="text" name="myTextInput" required/> <br />
+
+            <label for="email">Email:</label>
+            <input type="text" name="myTextInput" required/> <br />
+
+            <label for="phoneNumber">Phone:</label>
+            <input type="text" name="myTextInput" required/> <br />
+
+            <label for="inquiry">Reason for Inquiry:</label>
+            <select name="inquiry" required>
                 <option value="catering">Catering</option>
                 <option value="private-party">Private Party</option>
                 <option value="feedback">Feedback</option>
@@ -36,16 +63,23 @@
             </select> <br />
 
             Additional Information: <textarea name="additionalinfo"></textarea> </form> <br/>
-
-            Have you been to the restaurant? <input type="radio" name="answer" value="NO"/> No 
-            <input type="radio" name="answer" value="YES"/> Yes <br />
-
-            Best days to contact you: <input type="checkbox" value="Monday" checked/>M 
-            <input type="checkbox" value="Tuesday" checked/> T
-            <input type="checkbox" value="Wednesday" checked/> W
-            <input type="checkbox" value="Thursday" checked/> Th
-            <input type="checkbox" value="Friday" checked/> F <br/>
-            <input type="submit" value="Send Request" />
+            
+           
+                <label for="hasVisited">Have you been to the restaurant?</label>
+                <input type="radio" name="answer" value="NO" required/> No 
+                <input type="radio" name="answer" value="YES" required/> Yes <br/>
+           
+            
+        
+           
+                <label for="contactDays">Best days to contact you:</label>
+                <input type="checkbox" value="Monday" checked required/>M 
+                <input type="checkbox" value="Tuesday" checked/> T
+                <input type="checkbox" value="Wednesday" checked/> W
+                <input type="checkbox" value="Thursday" checked/> Th
+                <input type="checkbox" value="Friday" checked/> F <br/>
+                <input type="submit" value="Send Request" />
+            
           </form>
         </article>
 
