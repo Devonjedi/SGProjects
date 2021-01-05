@@ -23,6 +23,14 @@ else {
 }
 */
 
+/*
+Declare a new variable named "sum" initialized to 0. Be sure to use the "var" keyword.
+
+Use a for loop to add every positive integer less than n to sum.
+
+Come up with a solution that works for all values of n.
+*/
+
 var n = 25; 
 var sum = 0;
 
