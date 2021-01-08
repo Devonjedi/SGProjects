@@ -12,6 +12,7 @@ for (var arrayPosition = 0; arrayPosition < testArray.length; arrayPosition++) {
 console.log("The sum of " + testArray + " is: " + sum);
 */
 
+//Check this problem
 
 function findMax(numbers) {
     maxNumber = testArray[0];
