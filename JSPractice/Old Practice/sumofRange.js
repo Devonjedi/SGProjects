@@ -1,6 +1,5 @@
 
-var testArray = [17, 42, 311, 5, 9, 10, 28,7, 6];
-findMax(testArray);
+
 /*
 var sum = 0;
 
@@ -13,6 +12,9 @@ console.log("The sum of " + testArray + " is: " + sum);
 */
 
 //Check this problem
+
+var testArray = [17, 42, 311, 5, 9, 10, 28,7, 6];
+findMax(testArray);
 
 function findMax(numbers) {
     maxNumber = testArray[0];
