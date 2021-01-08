@@ -20,10 +20,11 @@ function findMax(numbers) {
         if (numbers[i] > maxNumber) {
             maxNumber = numbers[i];
             
-            console.log(maxNumber);
+            
         }
         
     }
+    console.log(maxNumber);
     return maxNumber;
     
    
