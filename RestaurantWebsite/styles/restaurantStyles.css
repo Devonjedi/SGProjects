@@ -1,16 +1,15 @@
 header, footer {
-    background-color: #b34e0b;
-    color: #fef9ff;
+    background-color: #8f400c;
+    
     height: 100px;
     text-align: center;
     
-    padding: 30px 10px 20px 10px;
+    
 }
-footer {
-    margin-top: 30em;
+
 }
 .clear-float {
-    clear:both;
+    clear:right;
 }
 title {
     font-family:sans-serif; 
@@ -21,8 +20,8 @@ h1 {
     font-variant: small-caps;
 }
 nav a {
-    background-color: #ffe2cd;
-    color:#d87a00;
+    background-color: #632b03;
+    color:#523208;
     font-size: 1.25em;
     font-weight: 500;
     padding: 8px;
@@ -33,7 +32,7 @@ nav a {
     margin: 5px;
 }
 nav a:visited{
-    color: #fc8621;
+    color: #ffd4ae;
 }
 nav a:hover{
     color:rgb(228, 196, 108);
