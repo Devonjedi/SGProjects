@@ -1,13 +1,17 @@
 header, footer {
     background-color: #8f400c;
-    
-    height: 100px;
+    padding-top: 2em;
+    height: 200px;
     text-align: center;
     
     
 }
-
+footer {
+    position: absolute; 
+    bottom: 0; left: 0; right: 0;
 }
+
+
 .clear-float {
     clear:right;
 }
