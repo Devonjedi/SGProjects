@@ -9,7 +9,8 @@
     <title>Rendezvous Menu</title>
  
     <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
     <style>
         body {
             background-color: rgb(253, 223, 190);
@@ -49,8 +50,11 @@
 
 </head>
 
-
+<!-- CSS Guide for footer formatting https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/-->
 <body>
+    <div id="page-container">
+    <div id="content-wrap">
+
     <header class="jumbotron">
 
         <h1>Rendezvous</h1>
@@ -58,12 +62,16 @@
 
     </header>
 
+        <!--https://www.w3schools.com/w3css/w3css_icons.asp link for icon library-->
+    <!--Nav bar links-->
     <nav>
         <hr/>
-       
-        <p><a class="btn badge-pill" href="index.html">Home</a>
-        <a class="btn badge-pill" href="menu.html">Menu</a>
-        <a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+        <ul>
+            <li><a class="btn badge-pill" href="index.html"><i class="material-icons">home</i> Home</a></li>
+            <li><a class="btn badge-pill" href="menu.html"><i class="material-icons">menu</i> Menu</a></li>
+            <li><a class="btn badge-pill" href="contact.html"><i class="material-icons">assignment_ind</i> Contact Us</a></li>
+        </ul>
+      
         <hr/>
     </nav>
 
@@ -73,12 +81,21 @@
             
             <table>
                 <caption>Cheesesteaks</caption>
+            
+        <!--Row 1 Philly Cheesesteaks-->
+            <div class="row">
+                <div class="col-md-3">
                 <tr>
                     <th>South Philly</th>
                     <th>Sunny Side of Philly</th>
                     <th>Fresh Prince</th>
                 </tr>
-                <!-- -->
+                </div>
+            </div>
+
+                <!--Row 2 Table Descriptions -->
+            <div class="row">
+                <div class="col-md-3">
                 <tr>
                     <td>Your choice of protein, choice of cheese, grilled onion.
                          This sandwich comes prepared on a bed of fries. </td>
@@ -90,67 +107,113 @@
 
                     </td>
                 </tr>
-                
+                </div>
+            </div>
+
+            <!--Row 3 Prices-->
+            <div class="row">
+                <div class="col-md-3">
                 <tr>
                     <td>$12.00</td>
                     <td>$13.00</td>
                     <td>$13.00</td>
                 </tr>
+                </div>
+            </div>
+
+            <!--Row 4 Pizzas-->
+            <div class="row">
+                <div class="col-md-3"> 
                 <tr>
                     <th>Classico</th>
                     <th>Tono</th>
                     <th>Margherita</th>
                 </tr>
+                </div>
+            </div>
+
+            <!--Row 5 Pizza descriptions-->
+            <div class="row">
+                <div class="col-md-3"> 
                 <tr>
                     <td>red sauce, fresh mozzarella, shredded mozzarella, basil, grana padano</td>
                     <td>red sauce, sausage, pepperoni, caramelized tomato, caramelized onion, Tono red chili oil</td>
                     <td>red sauce, fresh mozzarella, basil, sea salt, extra virgin olive oil </td>
                 </tr>
+                </div>
+            </div>
+
+            <!--Row 6 Prices-->
+            <div class="row">
+                <div class="col-md-3"> 
                 <tr>
                     <td>$12.00</td>
                     <td>$15.00</td>
                     <td>$12.00</td>
                 </tr>
+                </div>
+            </div>
+
             </table>
+
         </article>
 
         <article id="menu">
 
             <table>
                 <caption>Beverages</caption>
+
+            <div class="row">
+                <div class="col-md-3">
                 <tr>
                     <th>Root Beer</th>
                     <td>$3.00</td>
                 </tr>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-md-3">
                 <tr>
                     <th>Bottled Water</th>
                     <td>$1.25</td>
                 </tr>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-md-3">
                 <tr>
                     <th>Lemonade</th>
                     <td>$1.00</td>
                 </tr>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-md-3">
                 <tr>
                     <th>Iced Tea</th>
                     <td>$1.25</td>
                 </tr>
+                </div>
+            </div>
 
             </table>
 
         </article>
 
-        <footer>
-            <hr />
-            <p>1200 SE Division St, Portland, OR, 97202  </p> 
-            <p>Phone Number: 971-688-6920</p>
-        </footer>
 
     </section>
 
 
+</div>
+
+    <footer id="footer">
+            
+        <p>1200 SE Division St, Portland, OR, 97202  </p> 
+        <p>Phone Number: 971-688-6920</p>
+    </footer>
 
 
 
@@ -161,6 +224,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
+</div>
+
+</div>
 
 </body>
 

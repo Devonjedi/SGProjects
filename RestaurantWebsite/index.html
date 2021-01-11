@@ -3,14 +3,18 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Rendezvous</title>
 
-    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <!-- Style sheet Internal-->
     <style>
         section {
-            background-color: rgb(255, 217, 167);
+            background-color: rgb(255, 224, 184);
         }
       
     </style>
@@ -20,47 +24,57 @@
 
 
 <body>
-    
+    <div class = "container-fluid">
+
         <header class="jumbotron">
             <h1>Rendezvous</h1>
             <h3>Big News! New location opening May 2021</h3>
            
         </header>
        
-    
+    <!--https://www.w3schools.com/w3css/w3css_icons.asp link for icon library-->
     <!--Nav bar links-->
     <nav>
         <hr/>
-        <p><a class="btn badge-pill" href="index.html">Home</a>
-        <a class="btn badge-pill" href="menu.html">Menu</a>
-        <a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+        <ul>
+            <li><a class="btn badge-pill" href="index.html"><i class="material-icons">home</i> Home</a></li>
+            <li><a class="btn badge-pill" href="menu.html"><i class="material-icons">menu</i> Menu</a></li>
+            <li><a class="btn badge-pill" href="contact.html"><i class="material-icons">assignment_ind</i> Contact Us</a></li>
+        </ul>
+      
         <hr/>
     </nav>
 
-
+    <div class="row">
     <section>
         
-        <div class="format">
-            <img src="images/pexels-vedanti-239975.jpg" alt="Picture of restaurant cafeteria." width= "450" style= "height: 250px; float:left;" />
+        <div class="col-lg-3 col-md">
+    <!--div for picture-->
+            <div class="format">
+            <img src="images/pexels-vedanti-239975.jpg" alt="Picture of restaurant cafeteria." class="img-fluid"  style="float:left;" />
+            </div>
         </div>
         
-        <article id="about">
-            <h2>Restaurant Description</h2>
+        <div class="col-lg-9 col-md">
+    <!--div for text-->
+            <article id="about">
+                <h2>Restaurant Description</h2>
 
-            <p>Serving you pizza and cheese steaks from award-winning family recipes.
+                <p>Serving you pizza and cheese steaks from award-winning family recipes.
                 Our made from scratch individual sized pizzas give you an authentic taste of Italy,
                 Where our dough and sauce recipes were developed over four generations of passed down family recipes.
                 Our cheesesteaks are philly certified crafted with 100% never frozen prime beef and baked-fresh Amoroso's rolls.
-            </p>
+                </p>
 
             <div class="clear-float"></div>
-        </article>
+            </article>
+        </div>
 
     </section>
+    </div >
 
-
-    <footer>
-            <hr />
+    <footer id="footer">
+            
             <p>1200 SE Division St, Portland, OR, 97202  </p> 
             <p>Phone Number: 971-688-6920</p>
     </footer>
@@ -70,11 +84,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+   
+    </div>
 </body>
-
-
-
-
 
 </html>
