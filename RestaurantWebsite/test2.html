@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  var email = document.forms["myForm"]["email"].value;
+  var phone = document.forms["myForm"]["phone"].value;
+  var ddlFruits = document.forms["myForm"]["ddlFruits"].value;
+ 
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if (email == "") {
+    alert("email must be filled out");
+    return false;
+  }
+  if (phone == "") {
+      alert("phone number must be filled out ");
+      return false;
+  }
+  if (ddlFruits =="0") {
+    alert("please select fruit");
+    return false;
+  }
+
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="test2.html" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  
+  Email: <input type="email" name="email">
+  
+
+  Phone: <input type="tel" name="phone">
+</br>
+  Select Fruit:
+<select id="ddlFruits">
+    <option value="0"></option>
+    <option value="1">Apple</option>
+    <option value="2">Mango</option>
+    <option value="3">Orange</option>
+</select>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-header, footer {
+header {
     background-color: #8f400c;
     padding-top: 2em;
     height: 200px;
@@ -7,8 +7,16 @@ header, footer {
     
 }
 
+caption {
+    color: black;
+}
 
-
+.carousel-inner img{
+   margin: 0 auto;
+}
+.carousel-inner {
+    padding: 150px 200px;
+}
 .clear-float {
     clear:right;
 }
@@ -47,18 +55,13 @@ li {
     display:inline;
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
   
   #footer {
-    position: absolute;
+    background-color: #8f400c;
+    text-align: center;
+    position: sticky;
     bottom: 0;
     width: 100%;
-    height: 5rem;            /* Footer height */
+    height: 15rem;            /* Footer height */
+    color: black;
   }
