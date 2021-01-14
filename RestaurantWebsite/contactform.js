@@ -33,6 +33,12 @@ function validateItems() {
     var phone = document.forms["contact"]["phone"].value;
     var inquiry = document.forms["contact"]["inquiry"].value;
     
+    var radios = document.getElementsByName("answer");
+    var formValid = false;
+    var i = 0;
+
+    var checkBoxes = document.getElementById("contactDays");
+
     if (fname == ""  ) {
         alert("Name must be filled out");
         return false;
@@ -50,11 +56,18 @@ function validateItems() {
         return false;
     }
     //Ask about this later how to check for validation properly on radio buttons
-   if (document.getElementById("hasVisited").checked == false) {
-       alert("select yes or no ");
-       return false;
-   } 
-   //Check why form can't be submitted unless monday is checked
+    while (!formValid && i < radios.length) {
+        if (radios[i].checked) formValid = true;
+        i++;        
+    }
+
+    if (!formValid) {
+        alert("Must check some option!");
+        return formValid;
+    }
+
+    
+   /*Check why form can't be submitted unless monday is checked
    if (document.getElementById("contactDays").checked == false) {
        alert("Please Check Available Days");
        return false;
@@ -62,4 +75,8 @@ function validateItems() {
    else {
        alert("form has been validated and submitted!")
    }
+   */
+   
+  alert("form has been validated and submitted!");
+  return false;
 }
